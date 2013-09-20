@@ -47,16 +47,14 @@ body{
 	margin-top: -10px;
 }
 #leftContainer{
-	background-color:#f1f1f1;
+	background:none;
 }
 #searchBar{
-	background-color:#000;
-	color:#FFF;
-	text-align:center;
-	box-shadow:3px 3px 3px 0px grey;
-	margin-bottom: 1%;
-	font-weight: bold;
-	margin-top: 1%;
+	color: #000000;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    text-align: center;
 }
 #searchBar h4{
 	margin-left: 1%;
@@ -92,11 +90,14 @@ body{
 	background-color: #ff6600;
 	display:block;
 	cursor:pointer;
-	color:#FFF;
 	text-align:center;
 	margin-top: 2%;
 	margin-bottom:1%;
 	transition: all 0.5s ease 0s;
+}
+.clickMore a{
+	text-decoration:none;
+	color:#FFF;
 }
 #secondaryMainBar{
 	background-color:#000;

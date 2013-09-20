@@ -1,78 +1,48 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css" />
-<link rel="stylesheet" type="text/css" href="assets/css/bootstrap-responsive.css" />
-<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-<script type="text/javascript">
-	function showDetails(variable){
-		document.getElementById(variable).style.display = "block";
-		var mp = document.getElementById('mp');
-		mp.onmouseout=function(){
-			document.getElementById(variable).style.display = "none";
-		
-		};
-	}
-</script>
+<?php
+	$page_title = 'PHOTOS';
+	//get header
+	include ('v-templates/header.php');
 
-</head>
-<body>
-	<div class="container">
-		<div id="header">
-        <div class="row-fluid banner">
-        	<div class="span12">
-                <div class="span8">
-                    <div class="span4 logo"><img src="images/logo.png" alt="logo"></div>
-                </div>  <!-- will contain the logo -->
-                <div class="span4">
-                    <form class="form-search pull-right">
-                      <input type="text" class="input-medium search-query">
-                      <button type="submit" class="btn btn-primary">Search</button>
-                    </form>
-                </div>  <!-- will contain the search bar -->	
-            </div>
-        </div>
-    	<div class="navigation">
-        	<div class="navbar">
-              <div class="navbar-inner">
-                <div class="container">
-             
-                  <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
-                  <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                  </a>
-             
-                  <!-- Be sure to leave the brand out there if you want it shown -->
-             
-                  <!-- Everything you want hidden at 940px or less, place within here -->
-                  <div class="nav-collapse collapse">
-                     <ul class="nav">
-                      <li class="active"><a href="#">Home</a></li>
-                      <li><a href="#">Model</a></li>
-                      <li><a href="#">Photo</a></li>
-                      <li><a href="#">Videos</a></li>
-                      <li><a href="#">Blogs</a></li>
-                      <li><a href="#">Friends</a></li>
-                      <li><a href="#">Logout</a></li>
-                    </ul>
-                  </div>
-             
+	//get the horizontal navbar
+	include ('v-templates/navbar.php');
+?>
+
+<div id="bodyContainer" class="row-fluid">
+    	 <div class="row-fluid">
+            <div class="span12 blank">
+                <h4>Search By Model</h4>
+                <div class="pagination pagination-small center">
+                  <ul>
+                    <li><a  class="btn-danger" href="#">A</a></li>
+                    <li><a href="#">B</a></li>
+                    <li><a href="#">C</a></li>
+                    <li><a href="#">D</a></li>
+                    <li><a href="#">E</a></li>
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">G</a></li>
+                    <li><a href="#">H</a></li>
+                    <li><a href="#">I</a></li>
+                    <li><a href="#">J</a></li>
+                    <li><a href="#">K</a></li>
+                    <li><a href="#">L</a></li>
+                    <li><a href="#">M</a></li>
+                    <li><a href="#">N</a></li>
+                    <li><a href="#">O</a></li>
+                    <li><a href="#">P</a></li>
+                    <li><a href="#">Q</a></li>
+                    <li><a href="#">R</a></li>
+                    <li><a href="#">S</a></li>
+                    <li><a href="#">T</a></li>
+                    <li><a href="#">U</a></li>
+                    <li><a href="#">V</a></li>
+                    <li><a href="#">W</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Y</a></li>
+                    <li><a href="#">Z</a></li>
+                  </ul>
                 </div>
-              </div>
             </div>
         </div>
-    </div>  <!-- header ends here -->
-    
-    <div id="bodyContainer" class="row-fluid">
-    	<div class="row-fluid">
-            <div id="searchBar" class="span12 pull-left">
-                    <h4>Models</h4>
-            </div>
-       </div>
        <div class="row-fluid">
        		<div class="btn-group">
 			  <button class="btn btn-large btn-danger">Most Recent</button>
@@ -80,41 +50,7 @@
 			  <button class="btn btn-large btn-danger">Name/Title</button>
 			</div>	
        </div>
-       <div class="row-fluid">
-                    <div class="span12 blank">
-                            <h4>Search By Model</h4>
-							<div class="pagination pagination-small center">
-							  <ul>
-								<li><a  class="btn-danger" href="#">A</a></li>
-								<li><a href="#">B</a></li>
-								<li><a href="#">C</a></li>
-								<li><a href="#">D</a></li>
-								<li><a href="#">E</a></li>
-								<li><a href="#">F</a></li>
-								<li><a href="#">G</a></li>
-								<li><a href="#">H</a></li>
-								<li><a href="#">I</a></li>
-								<li><a href="#">J</a></li>
-								<li><a href="#">K</a></li>
-								<li><a href="#">L</a></li>
-								<li><a href="#">M</a></li>
-								<li><a href="#">N</a></li>
-								<li><a href="#">O</a></li>
-								<li><a href="#">P</a></li>
-								<li><a href="#">Q</a></li>
-								<li><a href="#">R</a></li>
-								<li><a href="#">S</a></li>
-								<li><a href="#">T</a></li>
-								<li><a href="#">U</a></li>
-								<li><a href="#">V</a></li>
-								<li><a href="#">W</a></li>
-								<li><a href="#">X</a></li>
-								<li><a href="#">Y</a></li>
-								<li><a href="#">Z</a></li>
-							  </ul>
-							</div>
-                    </div>
-                </div>
+      
 
     	
     	
@@ -255,68 +191,13 @@
             </div>
         </div>
 
-
-
-
-
-
-	
     	
    	</div>
     <!-- body container ends here -->
     
     
     
-    
-    
-    
-    <!-- footer starts from here -->
-    	<div class="footer span12 row-fluid">
-    	<div class=" row-fluid">
-    		<div class="span4">
-            	<p>HOME  |  MODELS  |  PHOTOS  |  VIDEOS </p>
-           	  <p>@Copyright 2013 handjobstop.com</p>
-                <p>18 U.S.C. 2257 Compliance statement</p>
-          </div>
-            <div class="span4">
-            	<p>ABOUT HANDJOBSTOP.COM</p>
-              <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-                
-
-          </div>
-			<div class="span4">
-           	  <p>SOCIAL LINKS <img src="images/f.png" alt="facebook"><img src="images/t.png" alt="twitter">
-              <img src="images/i.png" alt="linkedin"></p>
-              <P>Contact To conatact us email us at: 
-<br />yoursite@yoursite.com</P>
-
-			</div>
-    
-    	</div>
-    </div>
-
-    <!-- footer ends here -->
-    
-</div>	
-<!-- container ends here -->
-	
-	
-
-
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.lazy.js"></script>
-<script src="assets/js/bootstrap.js"></script>
-<script type="text/javascript">
-jQuery(document).ready(function() {
-    jQuery("img.lazy").lazy({
-        effect: "fadeIn",
-        effectTime: 1500
-    });
-});
-</script>	
-	
-</body>
-
-
-</html>
+<?php
+	//include footer
+	include ('v-templates/footer.php');
+?>
