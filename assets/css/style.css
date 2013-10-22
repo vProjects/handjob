@@ -185,5 +185,8 @@ body{
 	font-weight: bold;
 	margin-top: 1%;
 }
-
+.vid_link a{
+	text-decoration:none;
+	color: #333333;
+}
 

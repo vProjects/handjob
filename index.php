@@ -2,10 +2,7 @@
 	$page_title = 'HOME';
 	//get header
 	include ('v-templates/header.php');
-?>
 
-    	
-<?php
 	//get the horizontal navbar
 	include ('v-templates/navbar.php');
 ?>
@@ -83,10 +80,10 @@
                     </div>
                 </div>
                 <div class="row-fluid">
-                    <div class="span4 element">
-                        <h4>Kattie Gold behind the scene tease.</h4>
+                    <div class="span4 element vid_link">
+                        <a href="mov_play.php"><h4>Kattie Gold behind the scene tease.</h4></a>
                         <h5>0 min 0 sec</h5>
-                        <img class="lazy" data-src="images/video.jpg" src="" alt="vdeo">
+                        <a href="mov_play.php"><img class="lazy" data-src="images/video.jpg" src="" alt="vdeo"></a>
                         <p>Added 2013-07-23<br />Views: 90</p>
                         <img class="lazy" data-src="images/star-on.png" src="" alt="star">
                         <img class="lazy" data-src="images/star-on.png" src="" alt="star">
